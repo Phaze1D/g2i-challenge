@@ -7,10 +7,15 @@ export const Wrapper = styled.div`
   height: 100vh;
 `;
 
-export const Label = styled.h2`
-  padding: 4rem 0 2rem;
+export const Title = styled.h1`
+  font-size: 2rem;
   text-align: center;
-  font-size: 1.5rem;
+  padding: 1rem 0 4rem;
+`;
+
+export const Label = styled.h2`
+  padding: 1rem 0;
+  text-align: center;
 `;
 
 
@@ -24,7 +29,7 @@ export const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  margin: auto 0;
 `
 
 export const Button = styled.button`
@@ -33,7 +38,7 @@ export const Button = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   margin: 0 0.5rem;
-  box-shadow: ${boxShadow(1)};
+  box-shadow: ${boxShadow(2)};
   color: ${({theme}) => theme.colors.text};
 
   &:disabled {

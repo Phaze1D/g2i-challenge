@@ -23,10 +23,11 @@ const UI: React.FC<{
 
   return (
     <s.Wrapper>
-      <s.Label>{t('{{num}} of {{total}}', {num: 1, total: 10})}</s.Label>
+      <s.Title>Category</s.Title>
       <s.Card>
         Question
       </s.Card>
+      <s.Label>{t('{{num}} of {{total}}', {num: 1, total: 10})}</s.Label>
 
       <s.Footer>
         <s.Button
@@ -45,13 +46,6 @@ const UI: React.FC<{
           {t('False')}
         </s.Button>
       </s.Footer>
-
-      <s.Button
-        disabled={!answer}
-        style={{marginTop: 'auto'}}
-      >
-        {t('Next')}
-      </s.Button>
     </s.Wrapper>
   );
 };
