@@ -14,7 +14,7 @@ export const theme: ThemeType = {
   colors: {
     primary: '#26a69a',
     text: '#F6F5F7',
-    background: '#198486',
+    background: '#283d62',
     error: '#ef5350'
   },
   breakpoints: {

@@ -28,7 +28,7 @@ export const Footer = styled.div`
 
 export const Button = styled(Link)`
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
   margin: 0 0.5rem;

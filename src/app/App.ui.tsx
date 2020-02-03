@@ -1,7 +1,8 @@
 import * as React from 'react';
 import * as s from './App.styles';
 import Home from './routes/Home';
-import { Route } from 'react-router-dom';
+import Quiz from './routes/Quiz';
+import { Route, Switch } from 'react-router-dom';
 
 const App: React.FC<{
 
@@ -11,7 +12,10 @@ const App: React.FC<{
 
   return (
     <s.Wrapper>
-      <Route path='/' component={Home} />
+      <Switch>
+        <Route path='/quiz' component={Quiz} />
+        <Route path='/' component={Home} />
+      </Switch>
     </s.Wrapper>
   )
 }
