@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "lib": ["es5", "es2015", "es2016", "dom", "es2015.promise"],
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+        "*": ["src/*"]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
