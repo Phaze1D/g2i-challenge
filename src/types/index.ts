@@ -24,6 +24,7 @@ export type PayloadModel = {
 
 
 export type QuestionType = {
+  id?: string
   category: string
   type: string
   difficulty: Difficulties

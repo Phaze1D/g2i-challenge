@@ -55,7 +55,7 @@ const handleSuccess = (res: AxiosResponse) => {
   const models = results.map((question, i)=> ({
     type: 'Question',
     id: `${i}`,
-    data: {...question, user_answer: null}
+    data: {...question, user_answer: null, id: `${i}`}
   }));
 
   models.push({

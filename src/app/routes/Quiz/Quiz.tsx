@@ -51,7 +51,7 @@ const Quiz: React.FC<
     if (currentIndex + 1 < QUIZ_SIZE)
       return setQuestionIndex(prev => prev + 1);
 
-    history.push('/summary')
+    history.replace('/summary');
   }, [currentIndex]);
 
   return (

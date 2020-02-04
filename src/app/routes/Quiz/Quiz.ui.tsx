@@ -15,7 +15,6 @@ const UI: React.FC<{
   onAnswered
 }) => {
   const {t, ready} = useTranslation('quiz', {useSuspense: false});
-  const showLoading = !ready || loading;
 
   const handleClick = React.useCallback(event => {
     const {value} = event.target.dataset;
@@ -26,7 +25,7 @@ const UI: React.FC<{
 
   return (
     <s.Wrapper>
-      {showLoading ? t('Loading') :
+      {loading ? t('Loading') :
         <>
           <s.Title>{question.category}</s.Title>
           <s.Card dangerouslySetInnerHTML={{__html: question.question}} />
