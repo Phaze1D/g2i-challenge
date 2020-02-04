@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start:dev": "NODE_ENV=development webpack-dev-server --config webpack/dev.config.js",
-    "build": "rm -rf ./dist && webpack --config webpack/production.config.js",
+    "build": "rm -rf ./dist && webpack --config webpack/production.config.js && cp -aR ./locales ./dist",
     "test": "NODE_ENV=development jest --watch"
   },
   "dependencies": {
