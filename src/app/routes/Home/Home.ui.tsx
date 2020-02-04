@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as s from './Home.styles';
 import { useTranslation } from 'react-i18next';
+import { Difficulties } from 'types';
 
 const Home: React.FC<{
 
@@ -23,15 +24,15 @@ const Home: React.FC<{
       </s.Description>
 
       <s.Footer>
-        <s.Button to='/quiz?difficulty=easy'>
+        <s.Button to={`/quiz?difficulty=${Difficulties.EASY}`}>
           {t('Easy')}
         </s.Button>
 
-        <s.Button to='/quiz?difficulty=medium'>
+        <s.Button to={`/quiz?difficulty=${Difficulties.MEDIUM}`}>
           {t('Medium')}
         </s.Button>
 
-        <s.Button to='/quiz?difficulty=hard'>
+        <s.Button to={`/quiz?difficulty=${Difficulties.HARD}`}>
           {t('Hard')}
         </s.Button>
       </s.Footer>

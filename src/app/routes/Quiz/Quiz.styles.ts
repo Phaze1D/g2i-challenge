@@ -5,12 +5,15 @@ export const Wrapper = styled.div`
   flex-direction: column;
   padding: 1rem;
   height: 100vh;
+  margin: 0 auto;
+  max-width: 500px;
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
   padding: 1rem 0 4rem;
+  opacity: 0.7;
 `;
 
 export const Label = styled.h2`
@@ -20,7 +23,8 @@ export const Label = styled.h2`
 
 
 export const Card = styled.div`
-  padding: 2rem;
+  padding: 1.5rem;
+  word-break: break-word;
   border-radius: 8px;
   box-shadow: ${boxShadow(4, true)};
 `;
@@ -29,7 +33,7 @@ export const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto 0;
+  margin: 4rem 0;
 `
 
 export const Button = styled.button`
@@ -46,7 +50,7 @@ export const Button = styled.button`
     opacity: 0.5;
   }
 
-  &.checked {
+  &:active {
     box-shadow: ${boxShadow(2, true)};
   }
 `;
